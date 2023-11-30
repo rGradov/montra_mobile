@@ -10,17 +10,17 @@ END_COLOUR=\033[0m
 ##
 pub_get: ## use it to flutter pub get inside all packages
 	$(info ╠ ${APPNAME} flutter run pub get:)
-	@flutter pub get
+	@fvm flutter pub get
 	@for package in ${PACKAGES}; do \
 		 cd $${package} ; \
 		 echo "Get dependencies on package: $${package}" ; \
-		 flutter pub get ; \
+		 fvm flutter pub get ; \
 		  cd ../../ ; \
 	done
 	@for feature in ${FEATURES}; do \
     		 cd $${feature} ; \
     		 echo "Get dependencies on features: $${package}" ; \
-    		 flutter pub get ; \
+    		 fvm flutter pub get ; \
     		  cd ../../../ ; \
     	done
 	@echo   "done 🚀🚀🚀"

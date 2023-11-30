@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:splash/splash.dart';
 
 void main() {
@@ -32,7 +33,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home:  SplashScreen(doOnDone: (ctx)async{
+        Navigator.of(ctx).push(MaterialPageRoute(builder: (_)=>const SizedBox()));
+      },),
     );
   }
 }

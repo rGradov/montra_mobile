@@ -25,11 +25,11 @@ class _Dark {
 
 class _Light {
   const _Light();
-  static const light20 = Color(0xFFE3E5E5);
-  static const light40 = Color(0xFFF2F4F5);
-  static const light60 = Color(0xFFF7F9FA);
-  static const light80 = Color(0xFFFBFBFB);
-  static const light100 = Color(0xFFFCFCFC);
+  final light20 = const Color(0xFFE3E5E5);
+  final light40 = const Color(0xFFF2F4F5);
+  final light60 = const Color(0xFFF7F9FA);
+  final light80 = const Color(0xFFFBFBFB);
+  final light100 = const Color(0xFFFCFCFC);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
